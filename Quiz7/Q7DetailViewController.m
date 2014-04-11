@@ -35,8 +35,11 @@
 {
     // Update the user interface for the detail item.
 
+    // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"dueDate"] description];
+        [self.nameTextField setText:[self.detailItem name]];
+        [self.urgencySlider setValue:[self.detailItem urgency]];
+        [self.datePicker setDate:[self.detailItem dueDate]];
     }
 }
 
@@ -44,6 +47,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.nameTextField setDelegate:self];
     [self configureView];
 }
 
@@ -72,6 +76,11 @@
     float newUrgencyValue = [_urgencySlider value];
     
     [_urgencyLabel setText:[NSString stringWithFormat:@"%f", newUrgencyValue]];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 

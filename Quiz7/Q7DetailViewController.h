@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Task.h"
 
-@interface Q7DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface Q7DetailViewController : UIViewController <UISplitViewControllerDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) Task *detailItem;
 
