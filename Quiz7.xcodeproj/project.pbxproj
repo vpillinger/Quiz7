@@ -25,7 +25,7 @@
 		8D2C81EB18F84929005D6B93 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2C81C418F84928005D6B93 /* CoreData.framework */; };
 		8D2C81F318F84929005D6B93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C81F118F84929005D6B93 /* InfoPlist.strings */; };
 		8D2C81F618F84929005D6B93 /* Quiz7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C81F518F84929005D6B93 /* Quiz7Tests.m */; };
-		8D2C820118F849E9005D6B93 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C820018F849E9005D6B93 /* Task.m */; };
+		8DEB013318FB3D2400FD6D51 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB013218FB3D2400FD6D51 /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,8 @@
 		8D2C81F218F84929005D6B93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D2C81F418F84929005D6B93 /* Quiz7Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz7Tests.h; sourceTree = "<group>"; };
 		8D2C81F518F84929005D6B93 /* Quiz7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7Tests.m; sourceTree = "<group>"; };
-		8D2C81FF18F849E9005D6B93 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
-		8D2C820018F849E9005D6B93 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		8DEB013118FB3D2400FD6D51 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		8DEB013218FB3D2400FD6D51 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,6 @@
 		8D2C81C618F84928005D6B93 /* Quiz7 */ = {
 			isa = PBXGroup;
 			children = (
-				8D2C81FF18F849E9005D6B93 /* Task.h */,
-				8D2C820018F849E9005D6B93 /* Task.m */,
 				8D2C81CF18F84928005D6B93 /* Q7AppDelegate.h */,
 				8D2C81D018F84928005D6B93 /* Q7AppDelegate.m */,
 				8D2C81D218F84928005D6B93 /* MainStoryboard_iPhone.storyboard */,
@@ -138,6 +136,8 @@
 				8D2C81DE18F84929005D6B93 /* Q7DetailViewController.h */,
 				8D2C81DF18F84929005D6B93 /* Q7DetailViewController.m */,
 				8D2C81D818F84928005D6B93 /* Quiz7.xcdatamodeld */,
+				8DEB013118FB3D2400FD6D51 /* Task.h */,
+				8DEB013218FB3D2400FD6D51 /* Task.m */,
 				8D2C81C718F84928005D6B93 /* Supporting Files */,
 			);
 			path = Quiz7;
@@ -287,7 +287,7 @@
 				8D2C81DA18F84928005D6B93 /* Quiz7.xcdatamodeld in Sources */,
 				8D2C81DD18F84929005D6B93 /* Q7MasterViewController.m in Sources */,
 				8D2C81E018F84929005D6B93 /* Q7DetailViewController.m in Sources */,
-				8D2C820118F849E9005D6B93 /* Task.m in Sources */,
+				8DEB013318FB3D2400FD6D51 /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +471,7 @@
 				8D2C81FB18F84929005D6B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D2C81FC18F84929005D6B93 /* Build configuration list for PBXNativeTarget "Quiz7Tests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +480,7 @@
 				8D2C81FE18F84929005D6B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

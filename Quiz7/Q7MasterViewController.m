@@ -60,7 +60,7 @@
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
     [newManagedObject setValue:@"New Task" forKey:@"name"];
-    newManagedObject.urgency = (float)5.0;
+    [newManagedObject setUrgency:5.0];
     [newManagedObject setValue:[NSDate date] forKey:@"dueDate"];
     
     // Save the context.
